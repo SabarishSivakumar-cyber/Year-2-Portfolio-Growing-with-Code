@@ -1,0 +1,10 @@
+$ ./mini_aes_cli encrypt --key "a1b2c3d4e5f60708" --in secret.txt --out secret.enc
+[mini-aes] Loading key...
+[mini-aes] Key parsed (128-bit).
+[mini-aes] Reading input file: secret.txt (72 bytes)
+[mini-aes] Splitting into 16-byte blocks: 5 blocks
+[mini-aes] Round 0: AddRoundKey
+[mini-aes] Rounds 1..9: SubNibble | ShiftRows | MixColumns | AddRoundKey
+[mini-aes] Final round: SubNibble | ShiftRows | AddRoundKey
+[mini-aes] Encryption complete. Output written to secret.enc
+[mini-aes] Execution time: 24 ms
