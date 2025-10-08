@@ -1,0 +1,10 @@
+$ forensik --carve disk_image.dd --type jpeg,png,docx --out ./recovered
+[forensik] Opening disk image: disk_image.dd
+[forensik] Starting file carving (JPEG, PNG, DOCX)...
+[forensik] Found JPEG at offset 0x0012C000 -> recovered/image_001.jpg (34,212 bytes)
+[forensik] Found PNG at offset 0x0047F8A0 -> recovered/image_002.png (12,480 bytes)
+[forensik] Found DOCX (possible) at offset 0x00B4E000 -> recovered/doc_001.docx (112,340 bytes)
+[forensik] Extracting metadata for recovered files...
+[forensik] image_001.jpg: Created 2024-11-02 14:22:03, CameraModel=Canon EOS 80D
+[forensik] doc_001.docx: Author=unknown, LastSaved=2025-01-15 09:10:41
+[forensik] Completed. 3 files recovered, 0 errors.
