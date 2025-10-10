@@ -1,0 +1,17 @@
+$ passman init --db passwords.db --master "My$ecureP@55"
+[passman] Creating new password database: passwords.db
+[passman] Master password set. Database encrypted with AES-256-GCM.
+[passman] Use `passman add` to store credentials.
+
+$ passman add --name "gmail" --user "varsha.d" --password "examplePass123"
+[passman] Encrypting entry 'gmail'...
+[passman] Entry 'gmail' added successfully.
+
+$ passman list
+1) gmail
+
+$ passman get --name gmail
+[passman] Decrypting entry 'gmail'...
+Username: varsha.d
+Password: examplePass123
+Notes: Created 06-10-2025 19:24
