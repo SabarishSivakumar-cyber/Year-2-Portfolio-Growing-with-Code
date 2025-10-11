@@ -1,0 +1,12 @@
+$ faketest --url "http://example-login.xyz"
+[FakeDetector] Loading model: model_v2.pth
+[FakeDetector] Extracting features from http://example-login.xyz
+  - Form count: 1
+  - Has TLS: No
+  - Domain age: 12 days
+  - Suspicious keywords: login, secure, account-update
+[FakeDetector] Model inference: score = 0.92
+[FakeDetector] Verdict: HIGH RISK (Phishing likely)
+[FakeDetector] Recommendations:
+  - Do NOT submit credentials.
+  - Block domain and report to abuse@example.com
