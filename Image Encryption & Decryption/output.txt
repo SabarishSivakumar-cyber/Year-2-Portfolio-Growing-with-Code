@@ -1,0 +1,10 @@
+$ imgcrypt encrypt --in portrait.png --out portrait.enc --key hex:deadbeefcafebabe
+[imgcrypt] Reading image: portrait.png (2,048,128 bytes)
+[imgcrypt] Using mode: AES-CTR (stream)
+[imgcrypt] Encrypting 2,048,128 bytes...
+[imgcrypt] Checksum (SHA256): 3a7f...b12c
+[imgcrypt] Output: portrait.enc (2,048,128 bytes)
+[imgcrypt] Done. Time: 138 ms
+
+$ imgcrypt decrypt --in portrait.enc --out portrait_restored.png --key hex:deadbeefcafebabe
+[imgcrypt] Decryption complete. Restored file matches original checksum.
